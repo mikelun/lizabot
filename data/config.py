@@ -1,11 +1,13 @@
 import os
-from environs import Env
+from dotenv import load_dotenv
 
-# Теперь используем вместо библиотеки python-dotenv библиотеку environs
-env = Env()
-env.read_env()
+load_dotenv()
 
-BOT_TOKEN = env.str("BOT_TOKEN")
-ADMINS = env.list("ADMINS")
-IP = env.str("ip")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMINS = os.getenv("ADMIN_ID")
+HOST = os.getenv("PG_HOST")
+PG_USER = os.getenv("PG_USER")
+PG_PASS = os.getenv("PG_PASS")
+
+
 
