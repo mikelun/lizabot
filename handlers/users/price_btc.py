@@ -4,8 +4,11 @@ from aiogram.dispatcher.filters import Command
 from aiogram.types import Message
 from requests import get
 from bs4 import BeautifulSoup
+import time
+import random
 
-from ubuntu.loader import dp
+
+from loader import dp
 
 @dp.message_handler(Command("btc"))
 async def crypto_btc(message: Message):

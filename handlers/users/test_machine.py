@@ -2,7 +2,7 @@ from aiogram import types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
 
-from ubuntu.loader import dp
+from loader import dp
 from states.Test import Test
 
 
