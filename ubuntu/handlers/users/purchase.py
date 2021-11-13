@@ -5,7 +5,7 @@ from aiogram.types import Message, CallbackQuery
 
 from keyboards.inline.callback_datas import buy_callback
 from keyboards.inline.choice_buttons import choice, pear_keyboard, apples_keyboard
-from loader import dp
+from ubuntu.loader import dp
 
 @dp.message_handler(Command("items"))
 async def show_items(message: Message):

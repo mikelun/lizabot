@@ -1,7 +1,7 @@
 from aiogram import types
 from aiogram.dispatcher import FSMContext
 
-from loader import dp
+from ubuntu.loader import dp
 
 
 # Эхо хендлер, куда летят текстовые сообщения без указанного состояния

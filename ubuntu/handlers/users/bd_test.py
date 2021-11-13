@@ -4,7 +4,7 @@ from aiogram import types
 from aiogram.dispatcher.filters import Command
 from asyncpg import Connection, Record
 from asyncpg.exceptions import UniqueViolationError
-from loader import bot, dp, db
+from ubuntu.loader import bot, dp, db
 
 class DBCommands:
     pool: Connection = db
